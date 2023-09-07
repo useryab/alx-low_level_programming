@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - serves as the starting point for program execution
+ * main - program uses printf instead of puts
  * return: 0
  */
 int main(void)
