@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program uses printf instead of puts
+ * main - Entry point
  * return: 0
  */
 int main(void)
