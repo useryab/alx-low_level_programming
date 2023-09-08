@@ -5,7 +5,7 @@
  * main - entry to program
  * Description: 
  * Return: 0
- */
+*/
 int main(void)
 {
 int n;
