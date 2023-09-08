@@ -2,7 +2,7 @@
 /**
  * main - main entry
  * Return: 0
-*/
+ */
 int main(void)
 {
 	char c = 'a';
@@ -13,13 +13,13 @@ int main(void)
 		c++;
 	}
 
-	c = 'A'
+	c = 'A';
 
-       	while (c <= 'Z')
+	while (c <= 'Z')
 	{
-                putchar(c);
-                c++;
-	}	
+		putchar(c);
+		c++;
+	}
 
 	putchar('\n');
 	return (0);
