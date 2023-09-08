@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
-
- /**
- * main: entry
- *
- * return:program should return 1(program success)
+/**
+ * main - Enter block
+ * Return:1
  */
 int main(void)
 {
-    write()
-}	
+fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+return (1);
+}
