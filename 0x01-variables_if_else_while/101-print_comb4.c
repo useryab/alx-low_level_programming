@@ -3,7 +3,7 @@
 /**
  * main - prints combinations of three digit number n,m,l
  * Return: 0 
- */
+*/
 int main(void)
 {
 	int n, m, l;
