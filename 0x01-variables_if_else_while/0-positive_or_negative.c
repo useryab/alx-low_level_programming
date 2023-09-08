@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - entry point to the program
- * return: should always return 0 if successful
+ * main - Entry point
+ * return: Always 0 (Success)
 */
 int main(void)
 {
