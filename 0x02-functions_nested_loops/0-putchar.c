@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- *
- * main -Entry block
- * return: Always 0
- *
-*/
+ * main - main entry
+ * Return: 0
+ */
 
 int main(void)
 {
