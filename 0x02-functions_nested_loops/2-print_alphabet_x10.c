@@ -5,19 +5,19 @@
  * Return: 0
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 char chr;
-int = 0;
+int i = 0;
 while (i < 10)
 {
-char chr = 'a';
+chr = 'a';
 while (chr <= 'z')
 {
 _putchar(chr);
-chr++
+chr++;
 }
 _putchar('\n');
-i++
+i++;
 }
 }
