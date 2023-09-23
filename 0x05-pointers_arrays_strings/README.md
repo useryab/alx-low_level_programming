@@ -17,7 +17,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 
-### [1. Don't swap horses in crossing a stream](https://github.com/useryab/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/1-swap.c) :racehorse: :recycle:
+### [1. Don't swap horses in crossing a stream](https://github.com/useryab/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/1-swap.c)
 
 Write a function that swaps the values of two integers. 
 
