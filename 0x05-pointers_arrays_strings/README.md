@@ -69,6 +69,10 @@ Create a program that generates random valid passwords for the program [101-crac
 * [C - Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
 * [C - Strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
 * [Memory Layout](https://aticleworld.com/memory-layout-of-c-program/)
+* [Arrays & Pointers in C](https://www.youtube.com/playlist?list=PLBlnK6fEyqRjoG6aJ4FvFU1tlXbjLBiOP)
+* [Arrays in C - part 1 | Introduction to Arrays](https://www.youtube.com/watch?v=08LWytp6PNI)
+* [Strings in C](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhwQbYrTDZYJaB4z1YgsAPW)
+* [Pointers in C for Absolute Beginners – Full Course](https://www.youtube.com/watch?v=MIL2BK02X8A)
 
 ## Main.h
 
