@@ -4,7 +4,7 @@
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-## General
+## General :bookmark_tabs:
 * What are pointers and how to use them
 * What are arrays and how to use them
 * What are the differences between pointers and arrays
@@ -19,7 +19,7 @@ Write a function that takes a pointer to an int as parameter and updates the val
 
 ### 1. Don't swap horses in crossing a stream :racehorse: :recycle:
 
-Write a function that swaps the values of two integers. :recycle:
+Write a function that swaps the values of two integers. 
 
 ### 2. This report, by its very length, defends itself against the risk of being read
 
