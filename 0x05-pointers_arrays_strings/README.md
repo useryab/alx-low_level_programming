@@ -1,6 +1,6 @@
 # 0x05. C - Pointers, arrays and strings
 
-## Learning Objectives
+## Learning Objectives :White Heavy Check Mark:
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -73,6 +73,7 @@ Create a program that generates random valid passwords for the program [101-crac
 * [Arrays in C - part 1 | Introduction to Arrays](https://www.youtube.com/watch?v=08LWytp6PNI)
 * [Strings in C](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhwQbYrTDZYJaB4z1YgsAPW)
 * [Pointers in C for Absolute Beginners – Full Course](https://www.youtube.com/watch?v=MIL2BK02X8A)
+* [you will never ask about pointers again after watching this video](https://www.youtube.com/watch?v=2ybLD6_2gKM)
 
 ## Main.h
 
