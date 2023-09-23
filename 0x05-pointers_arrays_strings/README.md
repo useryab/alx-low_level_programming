@@ -13,13 +13,13 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ## Tasks 
 
-### 0. 98 Battery st.
+### 0. 98 Battery st. :battery:
 
 Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 
-### 1. Don't swap horses in crossing a stream
+### 1. Don't swap horses in crossing a stream :racehorse: :recycle:
 
-Write a function that swaps the values of two integers.
+Write a function that swaps the values of two integers. :recycle:
 
 ### 2. This report, by its very length, defends itself against the risk of being read
 
@@ -63,7 +63,7 @@ Write a function that convert a string to an integer.
 
 Create a program that generates random valid passwords for the program [101-crackme](https://github.com/alx-tools/0x04.c)
 
-## Resources
+## Resources :books:
 
 * [C - Arrays](https://www.tutorialspoint.com/cprogramming/c_arrays.htm)
 * [C - Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
