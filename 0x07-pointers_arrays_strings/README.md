@@ -105,3 +105,89 @@ Create a file that contains the password for the crackme2 executable.
 * ltrace, ldd, gdb and objdump can help
 * You may need to install the openssl library to run the crakme2 program: sudo apt install libssl-dev
 * Edit the source list sudo nano /etc/apt/sources.list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main Then sudo apt update and sudo apt install libssl1.0.0
+
+* To begin, we can execute the crackme file to observe its behavior by navigating to the crackme directory and entering the following command:
+
+```
+ ./crackme
+```
+* The following will be printed to standard output:
+
+```
+Access Denied
+```
+
+This suggests that the crackme file cannot be run in the usual way. As a result, we need to determine the cause of this issue. However, before we can do that, we need to identify the type of file it is.
+
+The file command is used to identify the type of a file. It does this by performing a series of tests in a specific order: filesystem tests, magic number tests, and language tests.
+
+These tests are designed to determine the file's type based on its content and any metadata associated with it. If you want to use the file command to identify the type of a specific file, you can do so by running file [filename] in your terminal. For example:
+
+```
+$ file crackme
+```
+
+would show you the type of the file crackme is as:
+
+```
+crackme: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.24, BuildID[sha1]=e06e0b0229279a69506925702a7f79e36bdc3eb2, not stripped
+```
+
+The information provided in the output of the file command reveals that the crackme file is:
+
+* An executable file designed to be run on a 64-bit Linux operating system
+Compiled for the x86–64 architecture and linked dynamically, meaning it relies on shared libraries to function
+
+* Interpreted by the /lib64/ld-linux-x86–64.so.2 interpreter
+
+* Built for GNU/Linux 2.6.24 and has a unique identifier called a “BuildID”
+Has not been stripped, so it still contains debugging information and symbols that can be used for analysis.
+
+ltrace is a utility that traces the dynamic library calls made by a program. Since we now know the file relies on shared libraries, ltrace can be used to analyze the crackme file. We may be able to see the specific library functions that the file calls and how they are used, which can provide additional insight into the behavior and purpose of the program.
+
+We can run ltrace on the crack me file by entering the following command:
+
+```
+$ ltrace ./crackme
+```
+
+the output of the command will be as follows:
+
+```
+__libc_start_main(0x400876, 1, 0x7fff11752498, 0x400a60 <unfinished ...>
+strncmp("HOSTNAME=f59e8821a191", "jennieandjayloveasm=", 20)                                = -34
+strncmp("LANGUAGE=en_US:en", "jennieandjayloveasm=", 20)                                    = -30
+strncmp("PWD=/alx-low_level_programming/0"..., "jennieandjayloveasm=", 20)                  = -26
+strncmp("TZ=America/Los_Angeles", "jennieandjayloveasm=", 20)                               = -22
+strncmp("HOME=/root", "jennieandjayloveasm=", 20)                                           = -34
+strncmp("LANG=en_US.UTF-8", "jennieandjayloveasm=", 20)                                     = -30
+strncmp("LS_COLORS=rs=0:di=01;34:ln=01;36"..., "jennieandjayloveasm=", 20)                  = -30
+ ~ __libc_start_main(0x400876, 1, 0x7fff11752498, 0x400a60 <unfinished ...>
+strncmp("HOSTNAME=f59e8821a191", "jennieandjayloveasm=", 20)                                = -34
+strncmp("LANGUAGE=en_US:en", "jennieandjayloveasm=", 20)                                    = -30
+strncmp("PWD=/alx-low_level_programming/0"..., "jennieandjayloveasm=", 20)                  = -26
+strncmp("TZ=America/Los_Angeles", "jennieandjayloveasm=", 20)                               = -22
+strncmp("HOME=/root", "jennieandjayloveasm=", 20)                                           = -34
+strncmp("LANG=en_US.UTF-8", "jennieandjayloveasm=", 20)                                     = -30
+strncmp("LS_COLORS=rs=0:di=01;34:ln=01;36"..., "jennieandjayloveasm=", 20)                  = -30
+ ~ __libc_start_main(0x400876, 1, 0x7fff11752498, 0x400a60 <unfinished ...>
+strncmp("HOSTNAME=f59e8821a191", "jennieandjayloveasm=", 20)                                = -34
+strncmp("LANGUAGE=en_US:en", "jennieandjayloveasm=", 20)                                    = -30
+strncmp("PWD=/alx-low_level_programming/0"..., "jennieandjayloveasm=", 20)                  = -26
+strncmp("TZ=America/Los_Angeles", "jennieandjayloveasm=", 20)                               = -22
+strncmp("HOME=/root", "jennieandjayloveasm=", 20)                                           = -34
+strncmp("LANG=en_US.UTF-8", "jennieandjayloveasm=", 20)                                     = -30
+strncmp("LS_COLORS=rs=0:di=01;34:ln=01;36"..., "jennieandjayloveasm=", 20)                  = -30
+strncmp("LESSCLOSE=/usr/bin/lesspipe %s %"..., "jennieandjayloveasm=", 20)                  = -30
+strncmp("TERM=xterm", "jennieandjayloveasm=", 20)                                           = -22
+strncmp("LESSOPEN=| /usr/bin/lesspipe %s", "jennieandjayloveasm=", 20)                      = -30
+strncmp("SHLVL=1", "jennieandjayloveasm=", 20)                                              = -23
+strncmp("LC_ALL=en_US.UTF-8", "jennieandjayloveasm=", 20)                                   = -30
+strncmp("PATH=/usr/local/sbin:/usr/local/"..., "jennieandjayloveasm=", 20)                  = -26
+strncmp("OLDPWD=/alx-low_level_programmin"..., "jennieandjayloveasm=", 20)                  = -27
+strncmp("_=/usr/bin/ltrace", "jennieandjayloveasm=", 20)                                    = -11
+puts("Access Denied"Access Denied
+)                                                                       = 14
++++ exited (status 1) +++
+
+```
