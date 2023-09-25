@@ -10,7 +10,8 @@
 * [C – Pointer to Pointer (Double Pointer)](https://www.geeksforgeeks.org/c-pointer-to-pointer-double-pointer/)
 * [Pointers in C- part 4 | Pointer to Pointer (Double Pointer)](https://www.youtube.com/watch?v=TPNYntM-5o4)
 * [Two dimensional (2D) arrays in C programming with example](https://beginnersbook.com/2014/01/2d-arrays-in-c-example/)
-
+* [memset() in C](https://www.geeksforgeeks.org/memset-c-example/) 
+* []()
 ## Learning Objectives :white_check_mark:
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
