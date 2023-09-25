@@ -3,8 +3,7 @@
  * _strstr - Write a function that locates a substring
  * @haystack: main C string to be scanned
  * @needle: string to be searched with-in haystack
- * Return: a pointer to the beginning of the located substring, or NULL if the
- * substring is not found
+ * Return: a pointer to the beginning of the located substring, or NULL
  */
 char *_strstr(char *haystack, char *needle)
 {
