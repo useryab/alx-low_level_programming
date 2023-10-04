@@ -8,6 +8,11 @@
 * [Dynamic memory allocation in C - malloc calloc realloc free (stop at 6:50)](https://www.youtube.com/watch?v=xDVC3wKjS64)
 * [How to use valgrind ](https://www.youtube.com/watch?v=A5Rc4AwdaOA)
 * [C Dynamic Memory Debugging with Valgrind](https://www.youtube.com/watch?v=bb1bTJtgXrI)
+* [Dynamic memory allocation in C - malloc calloc realloc free](https://youtu.be/xDVC3wKjS64?si=rrhK3_TceBkZg-LV)
+* [Dynamic Memory Allocation in C Programming Explained | ALX PLD DISCUSSION](https://www.youtube.com/watch?v=-za3kDtaMvY)
+* [What is Dynamic Memory Allocation?](https://www.geeksforgeeks.org/what-is-dynamic-memory-allocation/)
+* [Dynamic Memory Allocation in C using malloc(), calloc(), free() and realloc()](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+
 
 ## Learning Objectives
 
