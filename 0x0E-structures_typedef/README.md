@@ -1,6 +1,6 @@
 # 0x0E. C - Structures, typedef
 
-## Resources
+## Resources :book:
 
 ### Read or watch:
 
@@ -11,13 +11,14 @@
 * [typedef]( https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html)
 * Programming in C by Stephen Kochan - Chapter 8, Working with Structures p163-189
 * [The Lost Art of C Structure Packing (Advanced - not mandatory)](http://www.catb.org/esr/structure-packing/)
+* [C typedef](https://www.geeksforgeeks.org/typedef-in-c/)
 
-## Learning Objectives
+## Learning Objectives :dart:
 
 * What are structures, when, why and how to use them
 * How to use typedef
 
-## Tasks 
+## Tasks :bookmark_tabs:
 
 ![who let the dogs out, remote](https://media.giphy.com/media/10oxaWNVmz4G9q/giphy.gif)
 
