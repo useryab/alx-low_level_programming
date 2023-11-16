@@ -40,7 +40,7 @@ int main()
 
 ```
 
-In this example, nSum is a recursive function that calls itself to calculate the sum of the first N natural numbers. The base case is `if (n == 0) { return 0; },` which stops the recursion when N equals 0. The recursive case is `int res = n + nSum(n - 1);,` which calls the function again with N decreased by 1
+In this example, `nSum` is a recursive function that calls itself to calculate the sum of the first N natural numbers. The base case is `if (n == 0) { return 0; },` which stops the recursion when N equals 0. The recursive case is `int res = n + nSum(n - 1);,` which calls the function again with N decreased by 1
 
 ### Recursion can be classified into different types based on the kind of recursive case present:
 
