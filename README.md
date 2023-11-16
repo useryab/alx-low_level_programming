@@ -61,6 +61,8 @@ Participate in online forums and communities like Stack Overflow or Reddit (e.g.
 
 Apply your knowledge by working on real-world projects. This could be a personal project, contributing to open source projects, or collaborating with others on coding projects. Real-world applications help solidify your understanding.
 
+[ Top 25 C Projects with Source Code in 2023](https://www.geeksforgeeks.org/c-projects/)
+
 * 8 Learn Debugging:
 
 Learn to use debugging tools available in your IDE or standalone debuggers. Understanding how to identify and fix errors is a crucial skill for any programmer.
