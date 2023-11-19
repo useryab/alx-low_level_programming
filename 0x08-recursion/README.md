@@ -49,7 +49,7 @@ In this example, `nSum` is a recursive function that calls itself to calculate t
 
 Recursion is widely used to solve different kinds of problems, such as printing linked lists, tree traversals, and problems in AI. However, it also comes with certain limitations, such as making the program slower due to function call overhead and always taking extra space in the function call stack
 
-## Resources
+## Resources :books:
 
 * [0x08. Recursion, introduction](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/2818ba6f14f644b871dcbd746925fa15b8cd5937.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231115T190849Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=08dc2141839e85363303d616e2dc0835cd187642af5e404dd306e5361dd9a73d)
 * [What on Earth is Recursion?](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
