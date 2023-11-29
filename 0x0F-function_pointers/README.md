@@ -8,6 +8,86 @@
 	<li>Where does a function pointer point to in the virtual memory</li>
 </ol>
 
+In C programming, a function pointer is a variable that stores the memory address of a function. This means that the function pointer can be used to call the function, just like you would call a function using its name. Function pointers are powerful tools that can be used to achieve a variety of programming tasks, including:
+
+Passing functions as arguments to other functions
+* Implementing polymorphism
+* Creating callbacks
+* Creating dynamic dispatch
+* Declaring Function Pointers
+
+To declare a function pointer, you need to use the following syntax:
+
+```C
+type (*function_pointer_name)(parameters);
+```
+Where:
+
+`type` is the return type of the function
+`function_pointer_name` is the name of the function pointer
+`parameters` is a list of the function's parameters, enclosed in parentheses
+
+For example, the following code declares a function pointer named add_function that points to a function that takes two integer arguments and returns an integer:
+
+```C
+int (*add_function)(int, int);
+```
+
+## Initializing Function Pointers
+
+Once you have declared a function pointer, you need to initialize it with the address of the function you want it to point to. You can do this using the & operator, which takes the address of a variable. For example, the following code initializes the add_function pointer to point to the add function:
+
+```C
+int add(int a, int b) {
+  return a + b;
+}
+
+int (*add_function)(int, int) = &add;
+
+```
+
+## Calling Functions Through Function Pointers
+
+Once you have initialized a function pointer, you can call the function it points to using the following syntax:
+
+```C
+(*function_pointer_name)(arguments);
+```
+Where:
+
+`function_pointer_name` is the name of the function pointer
+`arguments` is a comma-separated list of the function's arguments, enclosed in parentheses
+
+For example, the following code calls the add function through the add_function pointer:
+
+```C
+int result = (*add_function)(5, 3);
+```
+This code will set the result variable to the value of 8, which is the sum of 5 and 3.
+
+## Function Pointers as Arguments
+
+Function pointers can be passed as arguments to other functions. This is a powerful feature that allows you to write code that is more flexible and reusable. For example, the following code defines a function called apply_function that takes a function pointer and an argument as arguments:
+
+```C
+void apply_function(int (*function_pointer)(int), int argument) {
+  int result = (*function_pointer)(argument);
+  printf("Result: %d\n", result);
+}
+```
+This function can be used to call any function that takes an integer argument and returns an integer. For example, the following code calls the apply_function function to pass the add function and the argument 10:
+
+```C
+apply_function(add, 10);
+```
+This code will print the following output:
+
+`Result: 10`
+
+## Conclusion
+
+Function pointers are a powerful tool that can be used to achieve a variety of programming tasks in C. They can be used to pass functions as arguments, implement polymorphism, create callbacks, and create dynamic dispatch.
+
 ## RESOURCES:
 
  <ol>
@@ -18,7 +98,7 @@
 	<li><a href="/rltoken/HuMpTjvVc_PxonkOuzQEbg" title="Everything you need to know about pointers in C" target="_blank">Everything you need to know about pointers in C</a> </li>
 </ol>
 
-## INTRODUCTION TO FILES :closed_book::closed_book::closed_book::
+## INTRODUCTION TO FILES :closed_book:
 
 0.	[**0-print_name.c**:](#0-print_namec) Function that prints a name.
 1.	[**1-array_iterator.c**:](#1-array_iteratorc) Function that executes a function given as a parameter on each element of an array.
